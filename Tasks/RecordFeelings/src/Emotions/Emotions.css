@@ -1,0 +1,14 @@
+/* start emoji section */
+img {
+  width: 60px;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label > img {
+  transform: scale(1.3);
+}
+/* end emoji section */

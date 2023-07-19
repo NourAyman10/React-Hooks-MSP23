@@ -1,0 +1,206 @@
+/* start header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 30px;
+}
+
+header .logo img {
+  width: 70px;
+}
+
+header h1 {
+  font-size: 50px;
+}
+/* end header */
+
+/* start main style */
+main {
+  display: flex;
+  justify-content: space-around;
+}
+/* end main style */
+
+/* start input */
+main section input {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  width: 500px;
+  border: none;
+  background-color: #6696fe58;
+}
+
+main section input:focus {
+  outline: none;
+}
+/* end input */
+
+/* start emoji section */
+main section p {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+main section .emoji {
+  display: flex;
+  gap: 15px;
+}
+/* end emoji section */
+
+/* start button style */
+main section .section {
+  display: flex;
+  align-items: flex-end;
+  width: 500px;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+main section .section button {
+  padding: 15px;
+  font-size: 25px;
+  background-color: var(--secondColor);
+}
+
+/* end button style */
+
+/* start main image style */
+main > img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+}
+/* end main image style */
+
+/* start list section */
+main section:nth-of-type(2) {
+  border: 2px solid var(--secondColor);
+  padding: 30px;
+  width: 500px;
+  border-radius: 30px 5px 5px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+main section:nth-of-type(2) div {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+main section:nth-of-type(2) > div {
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section:nth-of-type(2) div p {
+  line-break: anywhere;
+}
+
+main section:nth-of-type(2) div button {
+  padding: 10px;
+  font-size: 22px;
+  background-color: #F44336;
+}
+/* end list section */
+
+
+@media (max-width: 1000px) {
+  main > img {
+    display: none;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  main section:nth-of-type(2) {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 750px) {
+  /* start header */
+  header {
+    gap: 10px;
+    margin: 10px;
+  }
+
+  header .logo img {
+    width: 60px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  /* end header */
+
+  /* start input */
+  main section input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+  }
+  /* end input */
+
+  /* start emoji section */
+  main section p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  main section .emoji {
+    display: flex;
+    gap: 10px;
+  }
+
+  main section img {
+    width: 40px;
+  }
+
+  /* end emoji section */
+
+  /* start button style */
+  main section .section {
+    width: 300px;
+  }
+
+  main section .section button {
+    padding: 10px;
+    font-size: 18px;
+  }
+  /* end button style */
+
+  /* start list section */
+  main section:nth-of-type(2) {
+    padding: 20px;
+    width: 300px;
+    height: 60vh;
+  }
+  main section:nth-of-type(2) div button {
+    padding: 5px;
+    font-size: 16px;
+  }
+  /* end list section */
+
+}
