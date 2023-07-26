@@ -1,0 +1,158 @@
+main {
+  border-radius: 20px;
+  overflow: hidden;
+}
+/* start cart style */
+.mainCart {
+  border: 2px solid var(--secondColor);
+  border-radius: 20px;
+  padding: 25px;
+  height: 60vh;
+  overflow-y: scroll;
+}
+/* end cart style */
+
+/* start card style */
+.mainCart > div {
+  display: flex;
+}
+
+.mainCart .image {
+  min-width: 90px;
+  height: 90px;
+  background-color: red;
+  border-radius: 20px;
+  margin-right: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainCart .details {
+  width: 100%;
+}
+
+.mainCart .cartfooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainCart span {
+  display: flex;
+  align-items: flex-end;
+}
+
+.mainCart h3 {
+  font-size: 26px;
+}
+.cartfooter span:first-of-type {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cartfooter span:first-of-type sub {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.cartfooter span:nth-of-type(2) {
+  display: flex;
+  gap: 3px;
+  font-size: 18px;
+}
+.cartfooter span:nth-of-type(2) del {
+  color: black;
+}
+.cartfooter span:nth-of-type(2) p {
+  color: #7fba00;
+}
+
+.mainCart button {
+  align-self: flex-end;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #ff3131;
+}
+/* end card style */
+
+.hr {
+  height: 1px;
+  width: 100%;
+  background-color: #b3b3b3;
+  margin: 25px 0;
+}
+
+.hr:last-of-type {
+  display: none;
+}
+
+/* start cart icon style */
+.cartIconContainer {
+  position: relative;
+}
+.iconContainer {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+}
+.cartIcon {
+  background-color: var(--secondColor);
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.iconContainer p {
+  background-color: white;
+  color: black;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+/* end cart icon style */
+
+@media (max-width: 730px) {
+  .mainCart {
+    height: 40vh;
+    padding: 20px;
+  }
+
+  .mainCart .image {
+    min-width: 80px;
+    height: 80px;
+
+  }
+
+  .mainCart h3 {
+    font-size: 22px;
+  }
+  .cartfooter span:first-of-type {
+    font-size: 21px;
+  }
+
+  .cartfooter span:first-of-type sub {
+    font-size: 12px;
+  }
+
+  .cartfooter span:nth-of-type(2) {
+    font-size: 13px;
+  }
+
+  .mainCart button {
+    font-size: 3vw;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .mainCart button {
+    font-size: 5vw;
+  }
+}
